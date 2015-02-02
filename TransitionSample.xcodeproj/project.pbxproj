@@ -17,6 +17,10 @@
 		53F64EA11A7D5AF000747681 /* FinishingBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EA01A7D5AF000747681 /* FinishingBehavior.m */; };
 		53F64EA41A7D5B4300747681 /* CustomAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EA31A7D5B4300747681 /* CustomAnimatedTransition.m */; };
 		53F64EA71A7D5BC600747681 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EA61A7D5BC600747681 /* DetailViewController.m */; };
+		53F64EAA1A7E1B4500747681 /* CustomFullScreenFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EA91A7E1B4500747681 /* CustomFullScreenFromViewController.m */; };
+		53F64EAD1A7E1B5500747681 /* CustomFullScreenToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EAC1A7E1B5500747681 /* CustomFullScreenToViewController.m */; };
+		53F64EB01A7E1CD500747681 /* CustomFullScreenTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EAF1A7E1CD500747681 /* CustomFullScreenTransition.m */; };
+		53F64EB31A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EB21A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,14 @@
 		53F64EA31A7D5B4300747681 /* CustomAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimatedTransition.m; sourceTree = "<group>"; };
 		53F64EA51A7D5BC600747681 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		53F64EA61A7D5BC600747681 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		53F64EA81A7E1B4500747681 /* CustomFullScreenFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFullScreenFromViewController.h; sourceTree = "<group>"; };
+		53F64EA91A7E1B4500747681 /* CustomFullScreenFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFullScreenFromViewController.m; sourceTree = "<group>"; };
+		53F64EAB1A7E1B5500747681 /* CustomFullScreenToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFullScreenToViewController.h; sourceTree = "<group>"; };
+		53F64EAC1A7E1B5500747681 /* CustomFullScreenToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFullScreenToViewController.m; sourceTree = "<group>"; };
+		53F64EAE1A7E1CD500747681 /* CustomFullScreenTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFullScreenTransition.h; sourceTree = "<group>"; };
+		53F64EAF1A7E1CD500747681 /* CustomFullScreenTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFullScreenTransition.m; sourceTree = "<group>"; };
+		53F64EB11A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFullScreenAnimatedTransitioning.h; sourceTree = "<group>"; };
+		53F64EB21A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFullScreenAnimatedTransitioning.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 		53F64E781A7D57C300747681 /* TransitionSample */ = {
 			isa = PBXGroup;
 			children = (
+				53F64EB41A7FDA6C00747681 /* CustomFullScreen */,
 				53F64E7D1A7D57C300747681 /* AppDelegate.h */,
 				53F64E7E1A7D57C300747681 /* AppDelegate.m */,
 				53F64E801A7D57C300747681 /* ViewController.h */,
@@ -132,6 +145,21 @@
 				53F64E941A7D57C300747681 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53F64EB41A7FDA6C00747681 /* CustomFullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				53F64EA81A7E1B4500747681 /* CustomFullScreenFromViewController.h */,
+				53F64EA91A7E1B4500747681 /* CustomFullScreenFromViewController.m */,
+				53F64EAB1A7E1B5500747681 /* CustomFullScreenToViewController.h */,
+				53F64EAC1A7E1B5500747681 /* CustomFullScreenToViewController.m */,
+				53F64EAE1A7E1CD500747681 /* CustomFullScreenTransition.h */,
+				53F64EAF1A7E1CD500747681 /* CustomFullScreenTransition.m */,
+				53F64EB11A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.h */,
+				53F64EB21A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m */,
+			);
+			name = CustomFullScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,10 +262,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F64EB31A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m in Sources */,
+				53F64EAA1A7E1B4500747681 /* CustomFullScreenFromViewController.m in Sources */,
+				53F64EAD1A7E1B5500747681 /* CustomFullScreenToViewController.m in Sources */,
 				53F64E821A7D57C300747681 /* ViewController.m in Sources */,
 				53F64EA11A7D5AF000747681 /* FinishingBehavior.m in Sources */,
 				53F64E7F1A7D57C300747681 /* AppDelegate.m in Sources */,
 				53F64E7C1A7D57C300747681 /* main.m in Sources */,
+				53F64EB01A7E1CD500747681 /* CustomFullScreenTransition.m in Sources */,
 				53F64EA41A7D5B4300747681 /* CustomAnimatedTransition.m in Sources */,
 				53F64EA71A7D5BC600747681 /* DetailViewController.m in Sources */,
 			);
@@ -430,6 +462,7 @@
 				53F64E9B1A7D57C300747681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53F64E9C1A7D57C300747681 /* Build configuration list for PBXNativeTarget "TransitionSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +471,7 @@
 				53F64E9E1A7D57C300747681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
