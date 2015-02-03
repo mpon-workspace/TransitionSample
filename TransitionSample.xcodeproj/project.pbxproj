@@ -21,6 +21,11 @@
 		53F64EAD1A7E1B5500747681 /* CustomFullScreenToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EAC1A7E1B5500747681 /* CustomFullScreenToViewController.m */; };
 		53F64EB01A7E1CD500747681 /* CustomFullScreenTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EAF1A7E1CD500747681 /* CustomFullScreenTransition.m */; };
 		53F64EB31A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EB21A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m */; };
+		53F64EB81A7FE83D00747681 /* CustomNonFullScreenFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EB71A7FE83D00747681 /* CustomNonFullScreenFromViewController.m */; };
+		53F64EBB1A7FE84F00747681 /* CustomNonFullScreenToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EBA1A7FE84F00747681 /* CustomNonFullScreenToViewController.m */; };
+		53F64EBE1A7FE86800747681 /* CustomNonFullScreenTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EBD1A7FE86800747681 /* CustomNonFullScreenTransition.m */; };
+		53F64EC11A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EC01A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.m */; };
+		53F64EC41A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EC31A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,16 @@
 		53F64EAF1A7E1CD500747681 /* CustomFullScreenTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFullScreenTransition.m; sourceTree = "<group>"; };
 		53F64EB11A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFullScreenAnimatedTransitioning.h; sourceTree = "<group>"; };
 		53F64EB21A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFullScreenAnimatedTransitioning.m; sourceTree = "<group>"; };
+		53F64EB61A7FE83D00747681 /* CustomNonFullScreenFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNonFullScreenFromViewController.h; sourceTree = "<group>"; };
+		53F64EB71A7FE83D00747681 /* CustomNonFullScreenFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNonFullScreenFromViewController.m; sourceTree = "<group>"; };
+		53F64EB91A7FE84F00747681 /* CustomNonFullScreenToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNonFullScreenToViewController.h; sourceTree = "<group>"; };
+		53F64EBA1A7FE84F00747681 /* CustomNonFullScreenToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNonFullScreenToViewController.m; sourceTree = "<group>"; };
+		53F64EBC1A7FE86800747681 /* CustomNonFullScreenTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNonFullScreenTransition.h; sourceTree = "<group>"; };
+		53F64EBD1A7FE86800747681 /* CustomNonFullScreenTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNonFullScreenTransition.m; sourceTree = "<group>"; };
+		53F64EBF1A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNonFullScreenPresentAnimatedTransition.h; sourceTree = "<group>"; };
+		53F64EC01A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNonFullScreenPresentAnimatedTransition.m; sourceTree = "<group>"; };
+		53F64EC21A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNonFullScreenDismisalAnimatedTransition.h; sourceTree = "<group>"; };
+		53F64EC31A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNonFullScreenDismisalAnimatedTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +117,7 @@
 		53F64E781A7D57C300747681 /* TransitionSample */ = {
 			isa = PBXGroup;
 			children = (
+				53F64EB51A7FE7FE00747681 /* CustomNonFullScreen */,
 				53F64EB41A7FDA6C00747681 /* CustomFullScreen */,
 				53F64E7D1A7D57C300747681 /* AppDelegate.h */,
 				53F64E7E1A7D57C300747681 /* AppDelegate.m */,
@@ -160,6 +176,23 @@
 				53F64EB21A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m */,
 			);
 			name = CustomFullScreen;
+			sourceTree = "<group>";
+		};
+		53F64EB51A7FE7FE00747681 /* CustomNonFullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				53F64EB61A7FE83D00747681 /* CustomNonFullScreenFromViewController.h */,
+				53F64EB71A7FE83D00747681 /* CustomNonFullScreenFromViewController.m */,
+				53F64EB91A7FE84F00747681 /* CustomNonFullScreenToViewController.h */,
+				53F64EBA1A7FE84F00747681 /* CustomNonFullScreenToViewController.m */,
+				53F64EBC1A7FE86800747681 /* CustomNonFullScreenTransition.h */,
+				53F64EBD1A7FE86800747681 /* CustomNonFullScreenTransition.m */,
+				53F64EBF1A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.h */,
+				53F64EC01A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.m */,
+				53F64EC21A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.h */,
+				53F64EC31A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m */,
+			);
+			name = CustomNonFullScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,15 +296,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				53F64EB31A7FD6EE00747681 /* CustomFullScreenAnimatedTransitioning.m in Sources */,
+				53F64EBE1A7FE86800747681 /* CustomNonFullScreenTransition.m in Sources */,
 				53F64EAA1A7E1B4500747681 /* CustomFullScreenFromViewController.m in Sources */,
 				53F64EAD1A7E1B5500747681 /* CustomFullScreenToViewController.m in Sources */,
 				53F64E821A7D57C300747681 /* ViewController.m in Sources */,
 				53F64EA11A7D5AF000747681 /* FinishingBehavior.m in Sources */,
 				53F64E7F1A7D57C300747681 /* AppDelegate.m in Sources */,
+				53F64EC41A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m in Sources */,
 				53F64E7C1A7D57C300747681 /* main.m in Sources */,
+				53F64EB81A7FE83D00747681 /* CustomNonFullScreenFromViewController.m in Sources */,
+				53F64EC11A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.m in Sources */,
 				53F64EB01A7E1CD500747681 /* CustomFullScreenTransition.m in Sources */,
 				53F64EA41A7D5B4300747681 /* CustomAnimatedTransition.m in Sources */,
 				53F64EA71A7D5BC600747681 /* DetailViewController.m in Sources */,
+				53F64EBB1A7FE84F00747681 /* CustomNonFullScreenToViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

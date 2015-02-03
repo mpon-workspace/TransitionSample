@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4lr-W5-cND">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JKi-Hg-sSe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -52,6 +52,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1J-Ou-rnx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="502" y="1009"/>
+        </scene>
+        <!--Custom Non Full Screen From View Controller-->
+        <scene sceneID="nm7-3u-AXA">
+            <objects>
+                <viewController id="JKi-Hg-sSe" customClass="CustomNonFullScreenFromViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qya-rr-yhf"/>
+                        <viewControllerLayoutGuide type="bottom" id="QQl-V8-b7L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hu0-Yx-Dc4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v9-EH-EL8">
+                                <rect key="frame" x="52" y="319" width="270" height="30"/>
+                                <state key="normal" title="CustomNonFullScreenToViewController">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qei-OM-vEq" kind="presentation" id="fWl-V1-ZYs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="9v9-EH-EL8" secondAttribute="centerX" id="NOh-dB-JDb"/>
+                            <constraint firstAttribute="centerY" secondItem="9v9-EH-EL8" secondAttribute="centerY" id="Pg0-iF-DYe"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beU-tZ-3kz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="501.5" y="1765.5"/>
+        </scene>
+        <!--Custom Non Full Screen To View Controller-->
+        <scene sceneID="Aba-th-gt8">
+            <objects>
+                <viewController id="qei-OM-vEq" customClass="CustomNonFullScreenToViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iuK-3P-07R"/>
+                        <viewControllerLayoutGuide type="bottom" id="iNn-Ar-AQ8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fk2-2D-1Wa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTJ-Ae-rDn">
+                                <rect key="frame" x="43" y="319" width="289" height="30"/>
+                                <state key="normal" title="CustomNonFullScreenFromViewController">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButtonDidPush:" destination="qei-OM-vEq" eventType="touchUpInside" id="NQ9-l9-rFQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83137254900000002" green="0.28235294119999998" blue="0.46274509800000002" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="NTJ-Ae-rDn" secondAttribute="centerY" id="Icw-Wd-OAe"/>
+                            <constraint firstAttribute="centerX" secondItem="NTJ-Ae-rDn" secondAttribute="centerX" id="UjU-Oa-hnE"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ult-11-Jpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993.5" y="1765.5"/>
         </scene>
         <!--Custom Full Screen To View Controller-->
         <scene sceneID="WRe-g4-HMk">
