@@ -26,6 +26,9 @@
 		53F64EBE1A7FE86800747681 /* CustomNonFullScreenTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EBD1A7FE86800747681 /* CustomNonFullScreenTransition.m */; };
 		53F64EC11A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EC01A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.m */; };
 		53F64EC41A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EC31A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m */; };
+		53F64EC81A81061C00747681 /* InteractiveFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64EC71A81061C00747681 /* InteractiveFromViewController.m */; };
+		53F64ECB1A81062A00747681 /* InteractiveToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64ECA1A81062A00747681 /* InteractiveToViewController.m */; };
+		53F64ECE1A81065000747681 /* InteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F64ECD1A81065000747681 /* InteractiveTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,12 @@
 		53F64EC01A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNonFullScreenPresentAnimatedTransition.m; sourceTree = "<group>"; };
 		53F64EC21A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNonFullScreenDismisalAnimatedTransition.h; sourceTree = "<group>"; };
 		53F64EC31A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNonFullScreenDismisalAnimatedTransition.m; sourceTree = "<group>"; };
+		53F64EC61A81061C00747681 /* InteractiveFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveFromViewController.h; sourceTree = "<group>"; };
+		53F64EC71A81061C00747681 /* InteractiveFromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveFromViewController.m; sourceTree = "<group>"; };
+		53F64EC91A81062A00747681 /* InteractiveToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveToViewController.h; sourceTree = "<group>"; };
+		53F64ECA1A81062A00747681 /* InteractiveToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveToViewController.m; sourceTree = "<group>"; };
+		53F64ECC1A81065000747681 /* InteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTransition.h; sourceTree = "<group>"; };
+		53F64ECD1A81065000747681 /* InteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,7 @@
 		53F64E781A7D57C300747681 /* TransitionSample */ = {
 			isa = PBXGroup;
 			children = (
+				53F64EC51A8105FE00747681 /* InteractiveTransition */,
 				53F64EB51A7FE7FE00747681 /* CustomNonFullScreen */,
 				53F64EB41A7FDA6C00747681 /* CustomFullScreen */,
 				53F64E7D1A7D57C300747681 /* AppDelegate.h */,
@@ -193,6 +203,19 @@
 				53F64EC31A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m */,
 			);
 			name = CustomNonFullScreen;
+			sourceTree = "<group>";
+		};
+		53F64EC51A8105FE00747681 /* InteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				53F64EC61A81061C00747681 /* InteractiveFromViewController.h */,
+				53F64EC71A81061C00747681 /* InteractiveFromViewController.m */,
+				53F64EC91A81062A00747681 /* InteractiveToViewController.h */,
+				53F64ECA1A81062A00747681 /* InteractiveToViewController.m */,
+				53F64ECC1A81065000747681 /* InteractiveTransition.h */,
+				53F64ECD1A81065000747681 /* InteractiveTransition.m */,
+			);
+			name = InteractiveTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,12 +323,15 @@
 				53F64EAA1A7E1B4500747681 /* CustomFullScreenFromViewController.m in Sources */,
 				53F64EAD1A7E1B5500747681 /* CustomFullScreenToViewController.m in Sources */,
 				53F64E821A7D57C300747681 /* ViewController.m in Sources */,
+				53F64ECE1A81065000747681 /* InteractiveTransition.m in Sources */,
 				53F64EA11A7D5AF000747681 /* FinishingBehavior.m in Sources */,
 				53F64E7F1A7D57C300747681 /* AppDelegate.m in Sources */,
+				53F64ECB1A81062A00747681 /* InteractiveToViewController.m in Sources */,
 				53F64EC41A7FE8C800747681 /* CustomNonFullScreenDismisalAnimatedTransition.m in Sources */,
 				53F64E7C1A7D57C300747681 /* main.m in Sources */,
 				53F64EB81A7FE83D00747681 /* CustomNonFullScreenFromViewController.m in Sources */,
 				53F64EC11A7FE89B00747681 /* CustomNonFullScreenPresentAnimatedTransition.m in Sources */,
+				53F64EC81A81061C00747681 /* InteractiveFromViewController.m in Sources */,
 				53F64EB01A7E1CD500747681 /* CustomFullScreenTransition.m in Sources */,
 				53F64EA41A7D5B4300747681 /* CustomAnimatedTransition.m in Sources */,
 				53F64EA71A7D5BC600747681 /* DetailViewController.m in Sources */,
