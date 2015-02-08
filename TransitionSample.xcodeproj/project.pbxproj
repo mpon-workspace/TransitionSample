@@ -105,6 +105,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		537AF2E31A87C91F0000C383 /* [trash]InteractiveBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				53F64E801A7D57C300747681 /* ViewController.h */,
+				53F64E811A7D57C300747681 /* ViewController.m */,
+				53F64EA51A7D5BC600747681 /* DetailViewController.h */,
+				53F64EA61A7D5BC600747681 /* DetailViewController.m */,
+				53F64E9F1A7D5AF000747681 /* FinishingBehavior.h */,
+				53F64EA01A7D5AF000747681 /* FinishingBehavior.m */,
+				53F64EA21A7D5B4300747681 /* CustomAnimatedTransition.h */,
+				53F64EA31A7D5B4300747681 /* CustomAnimatedTransition.m */,
+			);
+			name = "[trash]InteractiveBehavior";
+			sourceTree = "<group>";
+		};
 		53F64E6D1A7D57C300747681 = {
 			isa = PBXGroup;
 			children = (
@@ -126,19 +141,12 @@
 		53F64E781A7D57C300747681 /* TransitionSample */ = {
 			isa = PBXGroup;
 			children = (
-				53F64EC51A8105FE00747681 /* InteractiveTransition */,
-				53F64EB51A7FE7FE00747681 /* CustomNonFullScreen */,
-				53F64EB41A7FDA6C00747681 /* CustomFullScreen */,
 				53F64E7D1A7D57C300747681 /* AppDelegate.h */,
 				53F64E7E1A7D57C300747681 /* AppDelegate.m */,
-				53F64E801A7D57C300747681 /* ViewController.h */,
-				53F64E811A7D57C300747681 /* ViewController.m */,
-				53F64EA51A7D5BC600747681 /* DetailViewController.h */,
-				53F64EA61A7D5BC600747681 /* DetailViewController.m */,
-				53F64E9F1A7D5AF000747681 /* FinishingBehavior.h */,
-				53F64EA01A7D5AF000747681 /* FinishingBehavior.m */,
-				53F64EA21A7D5B4300747681 /* CustomAnimatedTransition.h */,
-				53F64EA31A7D5B4300747681 /* CustomAnimatedTransition.m */,
+				53F64EB41A7FDA6C00747681 /* CustomFullScreen */,
+				53F64EB51A7FE7FE00747681 /* CustomNonFullScreen */,
+				53F64EC51A8105FE00747681 /* InteractiveTransition */,
+				537AF2E31A87C91F0000C383 /* [trash]InteractiveBehavior */,
 				53F64E831A7D57C300747681 /* Main.storyboard */,
 				53F64E861A7D57C300747681 /* Images.xcassets */,
 				53F64E881A7D57C300747681 /* LaunchScreen.xib */,
